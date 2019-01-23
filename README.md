@@ -29,8 +29,8 @@
 > make <br/>
 
 export
-  ./src/protoc // copy to /usr/local/bin <br/>
-  ./src/.lib // copy to /usr/local/lib
+  ./src/protoc    # copy to /usr/local/bin <br/>
+  ./src/.lib      # copy to /usr/local/lib
    
 
 # Example
