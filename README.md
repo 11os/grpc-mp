@@ -1,4 +1,4 @@
-# grpc-weapp
+# grpc-mp
 
 - support wechat miniprogram  
 - 增加微信小程序支持 
