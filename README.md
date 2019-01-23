@@ -2,7 +2,7 @@
 
 > support wechat miniprogram  <br/>
 > 增加微信小程序支持 <br/>
-> 生产文件增加fromObject方法
+> 暴露增加fromObject方法
 
 ## Env MacOS
 
