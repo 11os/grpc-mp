@@ -47,7 +47,7 @@ $ protoc ./*.proto \
 
 ### Before rpcCall
 
-```sh
+```javascript
 const client = new service.IAdminUserServicePromiseClient(
   `${hostUrlwithPort}`
 )
