@@ -30,9 +30,9 @@ $ ./configure
 $ make 
 ```
 
-export
-  ./src/protoc    # copy to /usr/local/bin <br/>
-  ./src/.lib      # copy to /usr/local/lib
+dist </br>
+  ./src/protoc </br>
+  ./src/.lib
    
 
 ## Example
