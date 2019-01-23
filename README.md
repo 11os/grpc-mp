@@ -1,7 +1,5 @@
 # grpc-weapp
 
----
-
 > support wechat miniprogram  <br/>
 > 增加微信小程序支持 <br/>
 > 生产文件增加fromObject方法
@@ -13,8 +11,6 @@
 
 # grpc-web
 
----
-
 ## Manual Installation
 
 > git clone https://github.com/11os/grpc-web/ <br/>
@@ -22,8 +18,6 @@
 > make install-plugin <br/>
 
 # protoc
-
----
 
 ## Manual Installation
 
@@ -40,8 +34,6 @@ export
    
 
 # Example
-
----
 
 ## Genreate pb & grpc_web_pb
 
@@ -71,6 +63,8 @@ client.delegateClient_.client_.newXhr_ = () => {
   return xhr
 }
 
-now you can call
+client.login(request, {}).then((resp) => {
+  console.log(resp)
+})
 
 ```
