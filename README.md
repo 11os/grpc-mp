@@ -4,14 +4,14 @@
 - 增加微信小程序支持 
 - 增加fromObject方法
 
-## MacOS
+## macOS env
 
 ```sh
 $ sudo xcode-select --install 
 $ sudo /opt/local/bin/port install autoconf automake libtool 
 ```
 
-## grpc-web
+## build grpc-web
 
 ```sh
 $ git clone https://github.com/11os/grpc-web.git 
@@ -19,7 +19,7 @@ $ cd grpc-web
 $ make install-plugin 
 ```
 
-## protoc
+## build protoc
 
 ```sh
 $ git clone https://github.com/11os/protobuf.git 
@@ -35,9 +35,9 @@ dist </br>
   ./src/.lib
    
 
-## Example
+## example
 
-### Genreate pb & grpc_web_pb
+### genreate pb & grpc_web_pb
 
 ```sh
 $ protoc ./*.proto \
@@ -45,7 +45,7 @@ $ protoc ./*.proto \
 --grpc-web_out=import_style=weapp,mode=grpcweb:./src
 ```
 
-### Before rpcCall
+### before rpcCall
 
 ```javascript
 const client = new service.IAdminUserServicePromiseClient(
