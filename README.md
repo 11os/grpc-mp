@@ -4,7 +4,7 @@
 - 增加微信小程序支持 
 - 增加fromObject方法
 
-## macOS env
+## prepare for mac
 
 ```sh
 $ sudo xcode-select --install 
@@ -41,8 +41,8 @@ dist </br>
 
 ```sh
 $ protoc ./*.proto \
---js_out=import_style=weapp:./src \
---grpc-web_out=import_style=weapp,mode=grpcweb:./src
+--js_out=import_style=miniprogram:./src \
+--grpc-web_out=import_style=miniprogram,mode=grpcweb:./src
 ```
 
 ### before rpcCall
