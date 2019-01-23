@@ -13,7 +13,7 @@
 
 ## Manual Installation
 
-> git clone https://github.com/11os/grpc-web/ <br/>
+> git clone https://github.com/11os/grpc-web.git <br/>
 > cd grpc-web <br/>
 > make install-plugin <br/>
 
