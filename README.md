@@ -1,32 +1,34 @@
 # grpc-weapp
 
-> support wechat miniprogram  <br/>
-> 增加微信小程序支持 <br/>
-> 增加fromObject方法
+- support wechat miniprogram  
+- 增加微信小程序支持 
+- 增加fromObject方法
 
 ## Env MacOS
 
-> sudo xcode-select --install <br/>
-> sudo /opt/local/bin/port install autoconf automake libtool <br/>
+```
+$ sudo xcode-select --install 
+$ sudo /opt/local/bin/port install autoconf automake libtool 
+```
 
 # grpc-web
 
-## Manual Installation
-
-> git clone https://github.com/11os/grpc-web.git <br/>
-> cd grpc-web <br/>
-> make install-plugin <br/>
+```
+$ git clone https://github.com/11os/grpc-web.git 
+$ cd grpc-web 
+$ make install-plugin 
+```
 
 # protoc
 
-## Manual Installation
-
-> git clone https://github.com/11os/protobuf.git <br/>
-> cd protobuf <br/>
-> git submodule update --init --recursive <br/>
-> ./autogen.sh <br/>
-> ./configure <br/>
-> make <br/>
+```
+$ git clone https://github.com/11os/protobuf.git 
+$ cd protobuf 
+$ git submodule update --init --recursive 
+$ ./autogen.sh 
+$ ./configure 
+$ make 
+```
 
 export
   ./src/protoc    # copy to /usr/local/bin <br/>
@@ -37,9 +39,11 @@ export
 
 ## Genreate pb & grpc_web_pb
 
-> protoc ./*.proto \
+```
+$ protoc ./*.proto \
 --js_out=import_style=weapp:./src \
 --grpc-web_out=import_style=weapp,mode=grpcweb:./src
+```
 
 ## Before rpcCall
 
