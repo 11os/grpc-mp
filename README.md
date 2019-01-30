@@ -4,7 +4,7 @@
 - 增加微信小程序支持
 - 增加 fromObject 方法
 
-## First
+## Usage
 
 ```sh
 $ yarn add grpc-mp # or npm install grpc-mp
@@ -64,7 +64,7 @@ cp ./src/.libs/* /usr/local/lib/
 ln -s /usr/local/lib /usr/local/bin/.libs
 ```
 
-## example
+## Example
 
 ### generate pb & grpc_web_pb
 
