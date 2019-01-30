@@ -1,8 +1,8 @@
 # grpc-mp
 
-- support wechat miniprogram
 - 增加微信小程序支持
 - 增加 fromObject 方法
+- 详细过程见[grpc-mp让小程序支持gRPC](https://11os.github.io/jekyll/update/2019/01/30/grpc-mp%E8%AE%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%94%AF%E6%8C%81gRPC.html)
 
 ## Usage
 
