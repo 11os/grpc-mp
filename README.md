@@ -47,7 +47,7 @@ dist </br>
 
 ## example
 
-### genreate pb & grpc_web_pb
+### generate pb & grpc_web_pb
 
 ```sh
 $ protoc ./*.proto \
