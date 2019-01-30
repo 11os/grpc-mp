@@ -1,6 +1,6 @@
 {
   "name": "grpc-mp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Google Inc.",
   "description": "gRPC-Web Client Runtime Library support miniprogram",
   "homepage": "https://grpc.io/",
