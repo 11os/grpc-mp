@@ -4,33 +4,48 @@
 - 增加微信小程序支持
 - 增加 fromObject 方法
 
-## install grpc-mp
+## First
 
 ```sh
-$ npm install grpc-mp
-or
-$ yarn add grpc-mp
+$ yarn add grpc-mp # or npm install grpc-mp
 ```
 
-## prepare for mac
+## Download Binary
+
+download **protoc** & **protoc-gen-grpc-web** from [release](https://github.com/11os/grpc-mp/releases) page:
+
+```sh
+$ tar -zxvf grpc-mp.tar.gz
+$ cd grpc-mp
+$ cp ./protoc /usr/local/bin/protoc
+$ cp ./protoc-gen-grpc-web /usr/local/bin/protoc
+$ cp ./.libs/* /usr/local/lib/
+$ ln -s /usr/local/lib /usr/local/bin/.libs
+
+# check 
+$ protoc --version
+$ which protoc-gen-grpc-web
+```
+
+## Manual Installation
+
+1. prepare for mac
 
 ```sh
 $ sudo xcode-select --install
 $ sudo /opt/local/bin/port install autoconf automake libtool
 ```
 
-## build grpc-web
+2. build grpc-web
 
 ```sh
 $ git clone https://github.com/11os/grpc-web.git
 $ cd grpc-web
 $ make install-plugin
+# auto copy to /usr/local/bin
 ```
 
-dist </br>
-protoc-gen-grpc-web
-
-## build protoc
+3.  build protoc
 
 ```sh
 $ git clone https://github.com/11os/protobuf.git
@@ -41,9 +56,13 @@ $ ./configure
 $ make
 ```
 
-dist </br>
-./src/protoc </br>
-./src/.lib
+
+```sh
+# copy to /usr/local/bin
+cp ./src/protoc /usr/local/bin/protoc
+cp ./src/.libs/* /usr/local/lib/
+ln -s /usr/local/lib /usr/local/bin/.libs
+```
 
 ## example
 
