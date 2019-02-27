@@ -17,10 +17,10 @@ download **protoc** & **protoc-gen-grpc-web** from [release](https://github.com/
 ```sh
 $ tar -zxvf grpc-mp.tar.gz
 $ cd grpc-mp
-$ cp ./protoc /usr/local/bin/protoc
-$ cp ./protoc-gen-grpc-web /usr/local/bin/protoc
-$ cp ./.libs/* /usr/local/lib/
-$ ln -s /usr/local/lib /usr/local/bin/.libs
+$ sudo cp ./protoc /usr/local/bin/protoc
+$ sudo cp ./protoc-gen-grpc-web /usr/local/bin/protoc-gen-grpc-web
+$ sudo cp ./.libs/* /usr/local/lib/
+$ sudo ln -s /usr/local/lib /usr/local/bin/.libs
 
 # check 
 $ protoc --version
