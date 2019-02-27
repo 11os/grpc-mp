@@ -68,10 +68,18 @@ ln -s /usr/local/lib /usr/local/bin/.libs
 
 ### generate pb & grpc_web_pb
 
+miniprogram
 ```sh
 $ protoc ./*.proto \
 --js_out=import_style=miniprogram:./src \
 --grpc-web_out=import_style=miniprogram,mode=grpcwebtext:./src
+```
+
+commonjs
+```sh
+$ protoc ./*.proto \
+--js_out=import_style=commonjs:./src \
+--grpc-web_out=import_style=commonjs,mode=grpcwebtext:./src
 ```
 
 ##
