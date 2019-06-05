@@ -18,16 +18,7 @@ $ yarn add grpc-mp # or npm install grpc-mp
 download **protoc** & **protoc-gen-grpc-web** from [release](https://github.com/11os/grpc-mp/releases) page:
 
 ```sh
-$ tar -zxvf grpc-mp.tar.gz
-$ cd grpc-mp
-$ sudo cp ./protoc /usr/local/bin/protoc
-$ sudo cp ./protoc-gen-grpc-web /usr/local/bin/protoc-gen-grpc-web
-$ sudo cp ./.libs/* /usr/local/lib/
-$ sudo ln -s /usr/local/lib /usr/local/bin/.libs
-
-# check 
-$ protoc --version
-$ which protoc-gen-grpc-web
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/11os/grpc-mp/master/install.sh)"
 ```
 
 ## Manual Installation
