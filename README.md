@@ -11,7 +11,7 @@
 
 1. 目前必须使用 mode=grpcwebtext。mode=grpcweb 在微信开发者工具与 iOS 真机调试中可以完美使用，但是在 android 真机中返回的 arraybuffer 在前 4 后 3 多出 7 位，造成解析不正常
 2. 需要搭配(11os/protobuf -> protoc)与(11os/grpc-web -> protoc-gen-grpc-web)使用，扩展了小程序相关的代码
-3. 改方案不建议生产环境使用，仅供科学研究，生产环境中 grpc 与 protobuf 源码文件较大，使小程序整体体积增大，对于需要快速加载的小程序用 rest/graphql 更为合适
+3. **该方案不建议生产环境使用**，仅供科学研究，生产环境中 grpc 与 protobuf 源码文件较大，使小程序整体体积增大，对于需要快速加载的小程序用 rest/graphql 更为合适
 
 ## Usage
 
