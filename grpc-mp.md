@@ -2,7 +2,7 @@
 
 [https://github.com/11os/grpc-mp](https://github.com/11os/grpc-mp)
 
-改方案不建议生产环境使用，生产环境中 grpc 与 protobuf 源码文件较大对于需要快速加载的小程序用 rest/graphql 更为合适
+该方案不建议生产环境使用，生产环境中 grpc 与 protobuf 源码文件较大对于需要快速加载的小程序用 rest/graphql 更为合适
 
 ## 分析 grpc-web 源码
 
